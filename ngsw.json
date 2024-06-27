@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1719463110402,
+  "timestamp": 1719463665862,
   "index": "https://nihil-ist.github.io/elapartamento/index.html",
   "assetGroups": [
     {
@@ -21,7 +21,7 @@
         "https://nihil-ist.github.io/elapartamento/chunk-YT5AF7SN.js",
         "https://nihil-ist.github.io/elapartamento/favicon.ico",
         "https://nihil-ist.github.io/elapartamento/index.html",
-        "https://nihil-ist.github.io/elapartamento/main-HFKPLN5J.js",
+        "https://nihil-ist.github.io/elapartamento/main-5TA4GND4.js",
         "https://nihil-ist.github.io/elapartamento/manifest.webmanifest",
         "https://nihil-ist.github.io/elapartamento/polyfills-6EAL64PA.js",
         "https://nihil-ist.github.io/elapartamento/scripts-FR7HA4WI.js",
@@ -314,8 +314,8 @@
     "https://nihil-ist.github.io/elapartamento/chunk-UNA7QTYE.js": "daef28d5b9396f3ba15d38b29dff3fccad0db034",
     "https://nihil-ist.github.io/elapartamento/chunk-YT5AF7SN.js": "d33c3f6f686c3972312f109f01432f706c2c2d78",
     "https://nihil-ist.github.io/elapartamento/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
-    "https://nihil-ist.github.io/elapartamento/index.html": "2de30e5715541247b33ad6581eb9f162fe29c766",
-    "https://nihil-ist.github.io/elapartamento/main-HFKPLN5J.js": "fbceacfb5511724980b7c1d4a71c479cc8f7b5e4",
+    "https://nihil-ist.github.io/elapartamento/index.html": "1fed5b190a74e19c5188def1ac40b4049015f89c",
+    "https://nihil-ist.github.io/elapartamento/main-5TA4GND4.js": "0f59189884d1f0e66aadf3c387aea6bf97acb5d8",
     "https://nihil-ist.github.io/elapartamento/manifest.webmanifest": "9f959dad26b1dbb5a6552f82b14f8ebac37cffa0",
     "https://nihil-ist.github.io/elapartamento/media/layers-2x-TBM42ERR.png": "152a162333e46d24f9d89f566312fc0c64011dee",
     "https://nihil-ist.github.io/elapartamento/media/layers-55W3Q4RM.png": "c9e7528e491a39232ba24a2706c6c739d6fb0f06",
