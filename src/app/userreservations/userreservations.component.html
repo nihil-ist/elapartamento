@@ -1,0 +1,48 @@
+<app-navbar></app-navbar>
+
+<div class="paddingx my-5">
+    @if (logged.getIsLogged() == 'theapartmentbnb@gmail.com'){
+        <h1>all reservations</h1>
+    } @else {
+        <h1>my reservations</h1>
+    }
+    <h4 class="mb-5" style="color: rgba(255, 255, 255, 0.7)">{{logged.getIsLogged()}}</h4>
+
+    <div class="list row">
+        <div class="col-md-6">
+          <h2 class="mb-3">reservation list</h2>
+          <ul class="list-group">
+
+            @for (item of reservations; track item.key; let i = $index ) {
+                @if (logged.getIsLogged() == 'theapartmentbnb@gmail.com'){
+                    <li class="list-group-item" [class.active]="i == currentIndex" (click)="setActiveUser(item, i)">
+                        {{ item.address }}
+                    </li>  
+                }
+                @else if (item.email == logged.getIsLogged()) {
+                    <li class="list-group-item" [class.active]="i == currentIndex" (click)="setActiveUser(item, i)">
+                        {{ item.address }}
+                    </li>  
+                }         
+            }
+
+          </ul>
+      
+        </div>
+        <div class="col-md-6">
+            @if (currentReservation) {
+            <div>
+              <app-reservations-details (refreshList)="refreshList()" [reservation]="currentReservation"></app-reservations-details>
+            </div>
+            } 
+          </div>
+      </div>
+
+
+      @if (logged.getIsLogged() == 'theapartmentbnb@gmail.com'){
+        <h2 class="my-5">reservations details qr</h2>
+        <app-qr-generator></app-qr-generator>
+    } 
+
+
+</div>

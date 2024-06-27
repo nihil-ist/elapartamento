@@ -1,0 +1,124 @@
+/* Estilos generales */
+.paddingx {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+p, ul, h4 {
+    text-align: center;
+}
+
+.py-5 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.mb-5 {
+    margin-bottom: 3rem;
+}
+
+.title1 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.container-rec {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 2%;
+}
+
+.grid-rec {
+    background-color: rgba(0, 0, 0, 0.06);
+    padding: 2%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.imgrec {
+    width: 100%;
+    height: auto;
+}
+
+.greySection {
+    background-color: rgba(0, 0, 0, 0.06);
+}
+
+.container-video {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.grid-video {
+    width: 100%;
+    padding: 0 2%;
+    text-align: center;
+}
+
+.text-video {
+    text-align: left;
+}
+
+.carousel-caption {
+    padding: 5% 2%;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+/* Estilos adicionales */
+.example-card {
+    width: calc(33.33% - 2%);
+    margin-bottom: 2%;
+}
+
+.video-responsive {
+    width: calc(50% - 2%);
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 575px) {
+    .paddingx {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    .container-rec .grid-rec,
+    .container-video .grid-video,
+    .example-card {
+        width: 100%;
+        margin-bottom: 4%;
+    }
+
+    .video-responsive {
+        width: 100%;
+    }
+}
+
+/* Estilos para pantallas medianas */
+@media (min-width: 576px) and (max-width: 991px) {
+    .container-rec .grid-rec,
+    .container-video .grid-video,
+    .example-card {
+        width: calc(50% - 2%);
+        margin-bottom: 2%;
+    }
+
+    .video-responsive {
+        width: calc(50% - 2%);
+    }
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 992px) {
+    .container-rec .grid-rec,
+    .container-video .grid-video,
+    .example-card {
+        width: calc(33.33% - 2%);
+        margin-bottom: 2%;
+    }
+
+    .video-responsive {
+        width: calc(50% - 2%);
+    }
+}

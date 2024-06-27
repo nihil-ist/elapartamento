@@ -1,0 +1,59 @@
+@if (currentReservation) {
+    <div class="edit-form">
+      <h2 class="mb-3">reservation</h2>
+      <form>
+        @if (logged.getIsLogged() == 'theapartmentbnb@gmail.com') {
+            <div class="form-outline form-group form-floating mb-3 text-black">
+                <input type="text" class="form-control custom-border" id="name" value="{{currentReservation.name}}" name="name" placeholder="name" readonly>
+                <label class="form-label" for="name">name</label>
+            </div>
+            <div class="form-outline form-group form-floating mb-3 text-black">
+                <input type="text" class="form-control custom-border" id="email" value="{{currentReservation.email}}" name="email" placeholder="email" readonly>
+                <label class="form-label" for="email">email</label>
+            </div>
+            <div class="form-outline form-group form-floating mb-3 text-black">
+                <input type="text" class="form-control custom-border" id="phone" value="{{currentReservation.phone}}" name="phone" placeholder="phone" readonly>
+                <label class="form-label" for="phone">phone</label>
+            </div>
+        }
+        <div class="form-group form-floating mb-3 text-black">
+            <input type="text" class="form-control custom-border" id="address" [(ngModel)]="currentReservation.address" name="address" placeholder="address" readonly>
+            <label class="form-label" label for="address">address</label>
+        </div>
+        <div class="form-group form-floating mb-3 text-black">
+            <input type="text" class="form-control custom-border" id="arrivalDate" [(ngModel)]="currentReservation.arrivalDate" name="arrivalDate" placeholder="arrivalDate" readonly>
+            <label class="form-label" for="arrivalDate">arrival date</label>
+        </div>
+        <div class="form-group form-floating mb-3 text-black">
+            <input type="text" class="form-control custom-border" id="departureDate" [(ngModel)]="currentReservation.departureDate" name="departureDate" placeholder="departureDate" readonly>
+            <label class="form-label" for="departureDate">departure date</label>
+        </div>
+        <div class="form-group form-floating mb-3 text-black">
+            <input type="text" class="form-control custom-border" id="arrivalTime" [(ngModel)]="currentReservation.arrivalTime" name="arrivalTime" placeholder="arrivalTime" readonly>
+            <label class="form-label" for="arrivalTime">arrival time</label>
+        </div>
+        <div class="form-group form-floating mb-3 text-black">
+            <input type="text" class="form-control custom-border" id="nights" [(ngModel)]="currentReservation.nights" name="nights" placeholder="nights" readonly>
+            <label class="form-label" for="nights">nights</label>
+        </div>
+        <div class="form-outline form-group form-floating mb-3 text-black">
+            <input type="text" class="form-control custom-border" id="priceNight" value="{{currentReservation.price}}" name="priceNight" placeholder="priceNight" readonly>
+            <label class="form-label" for="priceNight">price per night</label>
+        </div>
+        
+      </form>
+    
+      <div class="text-center mt-3">
+        <button class="btn btn-danger mr-2" (click)="deleteReservation()" mat-raised-button color="primary" class="shadow">cancel reservation</button>
+        &nbsp;
+        <!-- <button type="submit" class="btn btn-success" (click)="updateUser()">Update</button> -->
+        <p class="mt-3">{{ message }}</p>
+      </div>
+    </div>
+    } @else {
+    <div class="text-center">
+      <br>
+      <p>Cannot access this Reservation...</p>
+    </div>
+    }
+    

@@ -1,0 +1,15 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #2d2a2e;
+    color: white;
+}
+  
+main {
+    flex: 1;
+}
+
+.high-contrast {
+    filter: grayscale(100%);
+}
