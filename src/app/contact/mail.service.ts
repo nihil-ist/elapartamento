@@ -6,8 +6,8 @@ import { Injectable } from '@angular/core';
 })
 export class MailService {
 
-  private emailApi = 'http://localhost:3000/contactMail';
-  private emailCita = 'http://localhost:3000/citaMail';
+  private emailApi = 'https://nodejs-zsx5.onrender.com/contactMail';
+  private emailCita = 'https://nodejs-zsx5.onrender.com/citaMail';
 
   constructor( private httpClient:HttpClient) { }
 

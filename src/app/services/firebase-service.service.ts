@@ -12,7 +12,7 @@ import { environment } from '../../environments/environment';
 })
 export class FirebaseService {
   private dbPath = '/reservations';
-  private apiUrl = 'http://localhost:3000'; 
+  private apiUrl = 'https://nodejs-zsx5.onrender.com'; 
   
   reservationsRef: AngularFireList<Reservation>;
 
